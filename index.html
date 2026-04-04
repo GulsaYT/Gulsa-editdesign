@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulša | Portfolio</title>
+    <style>
+        :root { --bg: #050a13; --card: #0d192b; --acc: #64ffda; --txt: #a8b2d1; }
+        body { background: var(--bg); color: var(--txt); font-family: sans-serif; margin: 0; text-align: center; }
+        section { padding: 50px 20px; max-width: 1000px; margin: 0 auto; }
+        h1, h2 { color: #fff; }
+        .line { width: 50px; height: 3px; background: var(--acc); margin: 10px auto; }
+        
+        /* Karty klientov */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: var(--card); padding: 30px; border-radius: 15px; border: 1px solid #1a2a42; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--acc); }
+        .pfp { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--acc); margin-bottom: 15px; }
+        
+        /* Cenník */
+        .price-card { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 10px; inline-block; }
+        .cost { color: var(--acc); font-size: 1.5rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>GULŠA</h1>
+        <p>Video Editor & Designer</p>
+        <div class="line"></div>
+    </section>
+
+    <section id="clients">
+        <h2>Moji Klienti</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="IMG_0937.jpeg" class="pfp">
+                <h3>Gulša</h3>
+                <p>3k+ Subs</p>
+            </div>
+            <div class="card">
+                <img src="IMG_1510.jpeg" class="pfp">
+                <h3>DrWoolf</h3>
+                <p>1,4k+ Subs</p>
+            </div>
+            <div class="card">
+                <img src="IMG_1511.jpeg" class="pfp">
+                <h3>Adameantius</h3>
+                <p>1,7k+ Subs</p>
+            </div>
+            <div class="card">
+                <img src="IMG_1512.jpeg" class="pfp">
+                <h3>Pandak</h3>
+                <p>6k+ Subs</p>
+            </div>
+            <div class="card">
+                <img src="IMG_1509.jpeg" class="pfp">
+                <h3>AJHTtv</h3>
+                <p>6k+ Subs</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Cenník</h2>
+        <div class="grid">
+            <div class="price-card">
+                <h3>Thumbnail</h3>
+                <div class="cost">od 10€</div>
+            </div>
+            <div class="price-card">
+                <h3>Video Edit</h3>
+                <div class="cost">od 50€</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Discord: gulsayt / Email: studiogulsatvedit@email.com</p>
+    </section>
+
+</body>
+</html>
